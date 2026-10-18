@@ -1,1 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Board Game Scorekeeper 🎲</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <div class="app-card">
+        <!-- Header -->
+        <header class="app-header">
+            <span class="badge">Saran No. 111</span>
+            <h1>🎲 SCOREKEEPER</h1>
+            <p>Papan skor multi-pemain untuk malam game serumu!</p>
+        </header>
+
+        <!-- Konfigurasi Pemain & Reset -->
+        <div class="setup-bar">
+            <div class="select-group">
+                <label for="player-count">Jumlah Pemain:</label>
+                <select id="player-count">
+                    <option value="2">2 Pemain</option>
+                    <option value="3">3 Pemain</option>
+                    <option value="4" selected>4 Pemain</option>
+                </select>
+            </div>
+            <button id="reset-scores" class="btn-reset">🔄 Reset Skor</button>
+        </div>
+
+        <!-- Grid Kartu Skor Pemain -->
+        <div class="players-grid" id="players-grid">
+            <!-- Di-generate otomatis via JavaScript -->
+        </div>
+
+        <!-- Riwayat Log Aktivitas Skor -->
+        <div class="history-section">
+            <h3>📜 Riwayat Aktivitas Poin</h3>
+            <div class="history-box" id="history-box">
+                <p class="history-empty">Belum ada aktivitas poin tercatat.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
